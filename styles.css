@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+body {
+}
+
+#logo { 
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display", sans-serif;
+    font-size: 28px;
+    align-self: center;
+}
+
+header .container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    background-color:darkslategray;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    align-content: center;
+}
+
+li { 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+ul li p {
+    margin: 0;
+    padding: 0;
+}
+
+#menu {
+    margin: 0;
+    padding: 0;
+}
+
+#menuIcon {
+    display: none;
+}
+
+button {
+    font-family: "Bebas Neue", sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    width: auto;
+    height: 40px;
+    align-self: center;
+    background-color: #f44e3f;
+    
+}
+
+button:hover {
+    background-color: #f4998d;
+    color: white;
+    border: 2px solid black;
+    box-shadow: 20px 20px 20px 10px #f44e3f;
+}
+
+ /*-----------------
+----MEDIA QUERRY---- 
+------------------*/
+
+@media screen and ( min-width: 768px ) and ( max-width: 1024px ) {
+    #logo { 
+        font-size: 20px;
+    }
+
+    header .container {
+        height: 60px;
+    }
+
+    li {
+        font-size: 15px;
+    }
+
+    button {
+        height: 30px; 
+    }
+}
+
+@media screen and ( min-width: 480px ) and ( max-width: 768px ) {
+    #logo {
+        font-size: 15px;
+    }
+
+    header .container {
+        height: 50px;
+    }
+
+    li {
+        display: none;
+    }
+
+    #menuIcon {
+        display: block; 
+        height: 25px;
+        width: 25px;
+        color: black;
+        align-self: center;   
+
+    }
+
+    button {
+        height: 25px;
+    }
+}
